@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>CercaCitta</display-name>
+  <servlet>
+    <servlet-name>ricercacitta</servlet-name>
+    <servlet-class>it.objectmethod.cercacitta.servlet.CercaCittaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ricercacitta</servlet-name>
+    <url-pattern>/ricercacitta</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>aggiungimodifica</servlet-name>
+    <servlet-class>it.objectmethod.cercacitta.servlet.AggiungiModificaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>aggiungimodifica</servlet-name>
+    <url-pattern>/aggiungimodifica</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>cancella</servlet-name>
+    <servlet-class>it.objectmethod.cercacitta.servlet.CancellaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cancella</servlet-name>
+    <url-pattern>/cancella</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>modifica</servlet-name>
+    <servlet-class>it.objectmethod.cercacitta.servlet.ModificaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>modifica</servlet-name>
+    <url-pattern>/modifica</url-pattern>
+  </servlet-mapping>
+</web-app>
