@@ -28,7 +28,7 @@ public class CancellaServlet extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int id= Integer.parseInt(request.getParameter("identd"));
+		int ident= Integer.parseInt(request.getParameter("identd"));
 		
 		Connection conn = null;
 		Statement stmt = null;
@@ -45,7 +45,7 @@ public class CancellaServlet extends HttpServlet {
 			System.out.println("Creating statement...");
 			stmt = conn.createStatement();
 			String sql;
-			sql = "delete from city where id="+id+"";
+			sql = "delete from city where id="+ident+"";
 			stmt.executeUpdate(sql);
 			
 			
